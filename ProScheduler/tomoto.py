@@ -7,9 +7,9 @@ import logging
 
 # === configuration ===
 independent = 1 # 1:独立使用 2:作为模块嵌入到其他程序
-timeConfig = { 'work-1': 1, 'nap-1': 1,# 自由搭配，工作和休息周期
-               'work-2': 1, 'nap-2': 1,
-               'work-3': 1, 'rest': 1 }
+timeConfig = { 'work-1': 25, 'nap-1': 5,# 自由搭配，工作和休息周期
+               'work-2': 25, 'nap-2': 5,
+               'work-3': 25, 'rest': 15}
 threads = [] # 维护所有的番茄时钟线程
 stop_event = threading.Event()  # 线程退出标志位
 tomotoRecordPath = '' # 若该路径未被定义，则默认保存番茄记录在当前目录下
